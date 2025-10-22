@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro e Login</title>
+
+    <!-- CSS modular -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/cadastro.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Usuários</h1>
+
+      <div class="form-container">
+        <!-- Cadastro -->
+        <section id="cadastro" class="form-box">
+          <h2>Cadastro</h2>
+          <input type="text" id="nome" placeholder="Nome" />
+          <input type="email" id="emailCadastro" placeholder="Email" />
+          <input type="password" id="senhaCadastro" placeholder="Senha" />
+          <button onclick="cadastrar()">Cadastrar</button>
+          <p id="msgCadastro"></p>
+        </section>
+
+        <!-- Login -->
+        <section id="login" class="form-box">
+          <h2>Login</h2>
+          <input type="email" id="emailLogin" placeholder="Email" />
+          <input type="password" id="senhaLogin" placeholder="Senha" />
+          <button onclick="login()">Entrar</button>
+          <p id="msgLogin"></p>
+        </section>
+      </div>
+
+      <!-- Dashboard -->
+      <section id="dashboard">
+        <h2 id="bemVindo"></h2>
+        <p>Esta é sua tela de boas-vindas.</p>
+        <button onclick="logout()">Sair</button>
+      </section>
+    </div>
+
+    <!-- JS modular -->
+    <script src="js/validacao.js"></script>
+    <script src="js/cadastro.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+#dashboard {
+  display: none; /* inicialmente escondido */
+  text-align: center;
+  padding: 20px;
+}
+
+#dashboard h2 {
+  color: #6a11cb;
+  margin-bottom: 15px;
+}
+
+#dashboard p {
+  margin-bottom: 20px;
+}
+
+#dashboard button {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+}
+
+#dashboard button:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
